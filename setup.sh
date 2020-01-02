@@ -1,5 +1,15 @@
 #!/bin/bash
 
+# check for zsh being installed:
+command_exists() {
+	command -v "$@" >/dev/null 2>&1
+}
+
+if ! command_exists zsh; then
+		echo "Zsh is not installed. Please install zsh first."
+		exit 1
+fi
+
 # install oh-my-zsh to default folder if not there yet:
 if [ -d ~/.oh-my-zsh ]; then
     echo "oh-my-sh exists already. skipping install"
