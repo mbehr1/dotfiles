@@ -92,9 +92,13 @@ setopt HIST_REDUCE_BLANKS
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git tmux)
 
-# start tmux automatically:
-# doesn't work yet strangely on osx. zsh exists immediately.
-#ZSH_TMUX_AUTOSTART='true'
+# dont start tmux automatically as this leads to 
+# tmux inside tmux sessions if ssh to my machines:
+# If autostartis enabled the FIXTERM is needed on OSX
+# otherwise the tmux exists immediately and thus zsh as well...
+ZSH_TMUX_AUTOSTART='false'
+ZSH_TMUX_AUTOQUIT='false'
+ZSH_TMUX_FIXTERM='true'
 
 source $ZSH/oh-my-zsh.sh
 

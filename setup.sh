@@ -50,5 +50,17 @@ else
     ln -snv "$PWD/.p10k.zsh" ~/.p10k.zsh
 fi
 
+if [ -L ~/.tmux.conf ]; then
+    echo ".tmux.conf is already a symlink. skipping install"
+else
+    # backup
+    echo "creating backup of current .tmux.conf"
+    mv -iv ~/.tmux.conf ~/.tmux.conf.org_dotfiles_setup
+
+    echo "creating symlink to .tmux.conf"
+    ln -snv "$PWD/.tmux.conf" ~/.tmux.conf
+fi
+
+
 echo "done :-)"
 
