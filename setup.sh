@@ -62,7 +62,7 @@ else
 fi
 
 if ! command_exists fzf; then
-		echo "fzf is not installed. Please consider installing it!"
+		echo $fg_bold[yellow]"fzf is not installed. Please consider installing it!"
 fi
 
 echo "done :-)"
