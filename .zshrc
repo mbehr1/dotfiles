@@ -90,7 +90,11 @@ setopt HIST_REDUCE_BLANKS
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git tmux)
+
+# start tmux automatically:
+# doesn't work yet strangely on osx. zsh exists immediately.
+#ZSH_TMUX_AUTOSTART='true'
 
 source $ZSH/oh-my-zsh.sh
 

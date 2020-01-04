@@ -10,8 +10,14 @@ This installs (if not installed yet):
  - oh-my-zsh
  - powerlevel10k
 
+## Useful commands
+
+alias: show all aliases
+
 ## todo
 
 Test plugins:
+ - z.sh (or fzf only)
+ - fzf
  - magic-enter
- - tmux
+ - https://github.com/zsh-users/zsh-autosuggestions
