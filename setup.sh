@@ -61,6 +61,9 @@ else
     ln -snv "$PWD/.tmux.conf" ~/.tmux.conf
 fi
 
+if ! command_exists fzf; then
+		echo "fzf is not installed. Please consider installing it!"
+fi
 
 echo "done :-)"
 

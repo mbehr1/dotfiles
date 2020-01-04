@@ -18,6 +18,5 @@ alias: show all aliases
 
 Test plugins:
  - z.sh (or fzf only)
- - fzf
  - magic-enter
  - https://github.com/zsh-users/zsh-autosuggestions
