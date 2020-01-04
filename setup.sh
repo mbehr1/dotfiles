@@ -15,8 +15,7 @@ if [ -d ~/.oh-my-zsh ]; then
     echo "oh-my-sh exists already. skipping install"
 else 
     echo Install oh-my-zsh to default folder:
-    RUNZSH=no
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    RUNZSH=no sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
 # install powerlevel10k plugin/theme if not there yet:
