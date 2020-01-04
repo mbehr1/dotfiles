@@ -62,7 +62,7 @@ else
 fi
 
 if ! command_exists fzf; then
-		echo $fg_bold[yellow]"fzf is not installed. Please consider installing it!"
+	tput setaf 3 ; echo "fzf is not installed. Please consider installing it!" ; tput sgr0
 fi
 
 echo "done :-)"
